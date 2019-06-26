@@ -8,8 +8,9 @@ Your number is: <?php echo $_POST["numm"]; ?><br>
 
 
 <?php
-
-if ( $_POST["numm"] % "3" == "0" and $_POST["numm"] % "5" == "0"){
+if ($_POST["numm"] == 0) {
+echo "It's just the number 0";
+}elseif ( $_POST["numm"] % "3" == "0" and $_POST["numm"] % "5" == "0"){
 echo "FIZZBUZZ";
 }elseif ($_POST["numm"] % "3" == "0"){
 echo "FIZZ";
